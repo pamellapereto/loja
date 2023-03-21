@@ -1,0 +1,157 @@
+import { Text, View, StyleSheet, Image, ScrollView } from 'react-native';
+
+export default function ContentHome() {
+  return (
+    <View style={design.home}>
+      <View style={design.container}>
+        <View style={design.product1}>
+          <ScrollView horizontal={true}>
+            <Image
+              style={design.imgProduct}
+              source={{
+                uri: 'https://cdn-images.farfetch-contents.com/19/32/21/91/19322191_44769777_1000.jpg?c=3',
+              }}
+            />
+            <Image
+              style={design.imgProduct}
+              source={{
+                uri: 'https://cdn-images.farfetch-contents.com/19/32/21/91/19322191_44769777_1000.jpg?c=3',
+              }}
+            />
+          </ScrollView>
+
+          <Text style={design.productname}> Jaqueta Vars Martelo De Couro</Text>
+          <Text style={design.productcost}> R$60,00 </Text>
+        </View>
+
+        <View style={design.product2}>
+          <Image
+            style={design.imgProduct2}
+            source={{
+              uri: 'https://cdn-images.farfetch-contents.com/19/32/14/33/19321433_42671360_1000.jpg?c=3',
+            }}
+          />
+
+          <Text style={design.productname}>
+            {' '}
+            Sneakers Camurça Fora de Escritório Vintage
+          </Text>
+          <Text style={design.productcost}> R$70,00 </Text>
+        </View>
+
+        <View style={design.product3}>
+          <Image
+            style={design.imgProduct3}
+            source={{
+              uri: 'https://cdn-images.farfetch-contents.com/18/53/71/21/18537121_42690253_1000.jpg?c=3',
+            }}
+          />
+
+          <Text style={design.productname}>
+            {' '}
+            Sneakers Camurça Fora de Escritório Vintage
+          </Text>
+          <Text style={design.productcost}> R$80,00 </Text>
+        </View>
+
+        <View style={design.product4}>
+          <Image
+            style={design.imgProduct4}
+            source={{
+              uri: 'https://cdn-images.farfetch-contents.com/16/25/31/53/16253153_43215239_1000.jpg?c=3',
+            }}
+          />
+
+          <Text style={design.productname}> Jaqueta Camou Bege</Text>
+          <Text style={design.productcost}> R$55,00 </Text>
+        </View>
+      </View>
+    </View>
+  );
+}
+
+const design = StyleSheet.create({
+  home: {
+    display: 'flex',
+    flex: 0.61,
+  },
+
+  container: {
+    flexWrap: 'wrap',
+    //flexDirection: 'row',
+    //backgroundColor: '#FFE4C4',
+    padding: 5,
+  },
+
+  product1: {
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
+    width: '45%',
+    height: '50%',
+    marginLeft: 11,
+  },
+
+  productname: {
+    fontFamily: 'Merriweather_400Regular',
+    marginRight: 11,
+    fontSize: 13,
+  },
+
+  productcost: {
+    fontFamily: 'Merriweather_400Regular',
+    marginRight: 110,
+    fontSize: 13,
+  },
+
+  imgProduct: {
+    width: 180,
+    height: 180,
+    borderRadius: 6,
+  },
+
+  product2: {
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
+    width: '45%',
+    height: '50%',
+    marginLeft: 11,
+  },
+
+  imgProduct2: {
+    width: 180,
+    height: 180,
+    borderRadius: 6,
+  },
+
+  product3: {
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
+    width: '45%',
+    height: '50%',
+    marginLeft: 11,
+  },
+
+  imgProduct3: {
+    width: 180,
+    height: 180,
+    borderRadius: 6,
+  },
+
+  product4: {
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
+    width: '45%',
+    height: '50%',
+    marginLeft: 11,
+  },
+
+  imgProduct4: {
+    width: 180,
+    height: 180,
+    borderRadius: 6,
+  },
+});
